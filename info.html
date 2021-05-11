@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+		}
+
+		.header h1 {
+			font-size: 40px;
+		}
+
+		.navbar {
+			overflow: hidden;
+			background-color: #000099;
+			position: fixed;
+			width: 100%;
+		}
+
+		.navbar a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 20px;
+			text-decoration: none;
+		}
+
+
+		.navbar a.right {
+			float: right;
+		}
+
+
+		.navbar a:hover {
+			background-color: #0039e6;
+			color: white;
+		}
+
+
+		.row {
+			display: -ms-flexbox;
+			/* IE10 */
+			display: flex;
+			-ms-flex-wrap: wrap;
+			/* IE10 */
+			flex-wrap: wrap;
+		}
+
+		.side {
+			-ms-flex: 30%;
+			/* IE10 */
+			flex: 30%;
+			background-color: #f1f1f1;
+			padding: 40px;
+		}
+
+		.main {
+			-ms-flex: 70%;
+			/* IE10 */
+			flex: 70%;
+			background-color: white;
+			padding: 40px;
+		}
+
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: #000099;
+			color: white;
+			overflow: hidden;
+		}
+
+		@media screen and (max-width: 700px) {
+			.row {
+				flex-direction: column;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			.navbar a {
+				float: none;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="info.html">Portfolio</a>
+		<a href="other_info.html">Contact/About</a>
+	</div>
+
+	<div class="row">
+		<div class="side">
+			<h2>Here is a pdf of my final review</h2>
+      <a href="#Info">Info</a>
+		</div>
+		<div class="main">
+      <h2 id="Info">Info</h2>
+			<p>Some text..</p>
+			<p>blah</p>
+			<br>
+			<img src="flood.gif" alt="Flood" style="width:500px;height:600px;">
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

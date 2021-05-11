@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+	* {
+			box-sizing: border-box;
+		}
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+		}
+
+
+.header {
+  background-attachment: scroll;
+	background-image: url("bluemountain.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
+  text-align: center;
+  font-size: 30px;
+	font-family: Apple Chancery, cursive;
+	
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #000099;
+  color: white;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+		.navbar a:hover {
+			background-color: #0039e6;
+			color: white;
+		}
+
+.navbar a.active {
+  background-color: #000099;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+.parallaxSnow {
+			background-attachment: scroll;
+			background-image: url("snow.jpg");
+ 			height: 5%; 
+			width: 100%;
+			background-attachment: fixed;
+  		background-position: center;
+			background-repeat: no-repeat;
+ 			background-size: cover;
+			padding: 0px;
+}
+
+.parallaxSnow01 {
+			background-attachment: scroll;
+			background-image: url("snow01.jpg");
+ 			height: 5%; 
+			width: 100%;
+			background-attachment: fixed;
+  		background-position: center;
+			background-repeat: no-repeat;
+ 			background-size: cover;
+			padding: 0px;
+}
+		.main {
+			-ms-flex: 100%;
+			flex: 100%;
+			background-color: white;
+			padding: 25px;
+		}
+
+		.footer {
+		  background-attachment: scroll;
+			background-image: url("bluemountain.jpg");
+ 			height: 100%; 
+			background-attachment: fixed;
+  		background-position: center;
+			background-repeat: no-repeat;
+ 			background-size: cover;
+			padding: 20px;
+			text-align: center;
+			color: white;
+			overflow: hidden;
+		}
+header1{
+  color:rbg(0,0,0);
+  font-size: 90px;
+  font-family:Times New Roman, sans-serif;
+  text-align:left;
+}
+footer1{
+  color:rgb(255, 255, 255);
+  font-size: 40px;
+  text-align:left;
+}
+h2{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: calibri
+  text-align:left;
+
+}
+p{
+  color:rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: Times New Roman, Comic Sans MS
+  text-align: left;
+}
+		@media screen and (max-width: 700px) {
+			.row {
+				flex-direction: column;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			.navbar a {
+				float: none;
+				width: 100%;
+			}
+		}
+
+</style>
+</head>
+<body>
+
+	<div class="header">
+		<header1>Usha</header1>
+	</div>
+
+	<div id="navbar">
+		<div class="navbar">
+    	<a href="index.html">Home</a>
+    	<a href="info.html">Portfolio</a>
+			<a href="other_info.html">Contact/About</a>
+	</div>
+</div>
+		<div class="main">
+      <h2>Graphic Designer/Illustrator</h2>
+			<p>In Training...</p>
+			<p>blah</p>
+			<br>
+			<div class = "parallaxSnow">
+				<br>
+			</div>
+  </div>
+</div>
+
+<div class="main">
+	<h2>Some more information</h2>
+	<br>
+	<br>	
+	<div class = "parallaxSnow01">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>
+	<div class = "main">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+<div class="footer">
+  <footer1>ultravioletusha</footer1>
+</div>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
